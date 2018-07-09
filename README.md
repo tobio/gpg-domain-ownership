@@ -62,7 +62,7 @@ _owners.modestmind.net. 3600  IN  TXT "tobio"
 ;; MSG SIZE  rcvd: 103
 ```
 
-`webtask/signed.txt` has a message signed with my Keybase key.
+`webtask/signed*.txt` has a message signed with both Keybase and Web of Trust keys.
 
 The endpoint can be exercised via curl:
 `curl https://wt-bdd1a57e37bb559554e268267c174bf4-0.sandbox.auth0-extend.com/confirm-domain-ownership -v -X POST -d "domain=modestmind.net" --data-urlencode "signedMessage@signed.txt" -H "Expect:"`
