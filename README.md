@@ -65,6 +65,6 @@ _owners.modestmind.net. 3600  IN  TXT "tobio"
 `webtask/signed*.txt` has a message signed with both Keybase and Web of Trust keys.
 
 The endpoint can be exercised via curl:
-`curl https://wt-bdd1a57e37bb559554e268267c174bf4-0.sandbox.auth0-extend.com/confirm-domain-ownership -v -X POST -d "domain=modestmind.net" --data-urlencode "signedMessage@signed.txt" -H "Expect:"`
+`curl https://wt-bdd1a57e37bb559554e268267c174bf4-0.sandbox.auth0-extend.com/confirm-domain-ownership -v -X POST -d "domain=modestmind.net" --data-urlencode "verification@signed.txt" -H "Expect:"`
 
 Or via the bundled [React UI](https://tobio.github.io/gpg-domain-ownership/).
